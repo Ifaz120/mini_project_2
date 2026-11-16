@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glazeworks — Hand-glazed ceramics</title>
+  <meta name="description" content="Small-batch cobalt and sea-glass ceramics for everyday use.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Bricolage Grotesque"', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+          },
+          colors: {
+            cobalt: '#2B3FD6',
+            ink: '#15172B',
+            ice: '#EDF0F9',
+            glass: '#BFE3D4',
+            sun: '#FFC857',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-ice font-sans text-ink antialiased selection:bg-cobalt selection:text-white">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 border-b border-ink/5 bg-ice/80 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Main">
+      <a href="#top" class="font-display text-xl font-extrabold tracking-tight focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cobalt">
+        glazeworks
+      </a>
+      <ul class="hidden items-center gap-8 text-sm font-medium md:flex">
+        <li><a href="#shop" class="relative py-1 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-cobalt after:transition-transform after:duration-300 hover:after:scale-x-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cobalt">Shop</a></li>
+        <li><a href="#story" class="relative py-1 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-cobalt after:transition-transform after:duration-300 hover:after:scale-x-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cobalt">How we make it</a></li>
+        <li><a href="#care" class="relative py-1 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-cobalt after:transition-transform after:duration-300 hover:after:scale-x-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cobalt">Care</a></li>
+      </ul>
+      <a href="#shop" class="rounded-full bg-ink px-5 py-2 text-sm font-medium text-white transition duration-300 hover:bg-cobalt hover:shadow-lg hover:shadow-cobalt/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cobalt">
+        Bag (0)
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="mx-auto max-w-6xl px-5 pt-6 md:pt-10">
+      <div class="relative overflow-hidden rounded-[2rem] bg-cobalt px-6 pb-0 pt-14 text-white md:rounded-[2.5rem] md:px-14 md:pt-20">
+        <!-- soft glow -->
+        <div class="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-sun/30 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-32 left-1/4 h-80 w-80 rounded-full bg-glass/20 blur-3xl"></div>
+
+        <div class="relative grid items-end gap-6 md:grid-cols-2">
+          <div class="pb-10 md:pb-24">
+            <p class="mb-5 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-sm backdrop-blur">
+              <span class="h-2 w-2 rounded-full bg-sun"></span> New batch fired this week
+            </p>
+            <h1 class="font-display text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+              Mugs that remember your hands.
+            </h1>
+            <p class="mt-6 max-w-md text-lg leading-relaxed text-white/80">
+              Wheel-thrown stoneware, dipped in cobalt and sea-glass glazes. Each piece is made in small batches, so no two are quite alike.
+            </p>
+            <div class="mt-9 flex flex-wrap items-center gap-4">
+              <a href="#shop" class="group inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-medium text-cobalt transition duration-300 hover:-translate-y-0.5 hover:bg-sun hover:text-ink hover:shadow-xl hover:shadow-black/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                Shop the collection
+                <span class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">&rsaquo;</span>
+              </a>
+              <a href="#story" class="font-medium underline decoration-white/40 underline-offset-4 transition hover:decoration-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">See how it's made</a>
+            </div>
+          </div>
+
+          <!-- Drawn hero object: a mug on a shelf -->
+          <div class="relative mx-auto flex h-72 w-full max-w-sm items-end justify-center sm:h-96 md:h-[30rem]" aria-hidden="true">
+            <div class="group relative mb-0 transition duration-700 hover:-rotate-3">
+              <!-- mug body -->
+              <div class="relative h-56 w-48 rounded-b-[4rem] rounded-t-2xl bg-gradient-to-br from-white via-ice to-glass shadow-[inset_-18px_-12px_30px_rgba(43,63,214,0.25)] sm:h-72 sm:w-60 md:h-80 md:w-64">
+                <div class="absolute inset-x-0 top-0 h-6 rounded-t-2xl bg-ink/10"></div>
+                <div class="absolute left-6 top-14 h-3 w-24 rounded-full bg-cobalt/70"></div>
+                <div class="absolute left-6 top-20 h-3 w-14 rounded-full bg-sun"></div>
+              </div>
+              <!-- handle -->
+              <div class="absolute -right-14 top-12 h-32 w-20 rounded-r-full border-[14px] border-l-0 border-ice sm:-right-16 sm:h-40 sm:w-24"></div>
+            </div>
+            <!-- shelf -->
+            <div class="absolute inset-x-0 bottom-0 h-4 rounded-t-xl bg-ink/30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="mx-auto max-w-6xl scroll-mt-20 px-5 py-20 md:py-28">
+      <div class="mb-12 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <h2 class="font-display text-4xl font-extrabold tracking-tight md:text-5xl">The everyday set</h2>
+        <p class="max-w-sm text-ink/70">Six pieces we reach for every morning. Dishwasher safe, microwave safe, made to chip gracefully.</p>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Product 1: Mug -->
+        <div class="group">
+          <div class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl bg-white transition duration-500 group-hover:bg-cobalt group-hover:shadow-2xl group-hover:shadow-cobalt/25">
+            <span class="absolute left-4 top-4 rounded-full bg-sun px-3 py-1 text-xs font-bold">Bestseller</span>
+            <div class="relative transition duration-500 group-hover:-translate-y-3 group-hover:scale-105 group-hover:-rotate-3" aria-hidden="true">
+              <div class="h-28 w-24 rounded-b-[2rem] rounded-t-lg bg-gradient-to-br from-cobalt to-[#1b2a9c] shadow-[inset_-8px_-6px_14px_rgba(0,0,0,0.25)] group-hover:from-white group-hover:to-glass"></div>
+              <div class="absolute -right-6 top-5 h-14 w-9 rounded-r-full border-[8px] border-l-0 border-cobalt group-hover:border-white"></div>
+            </div>
+            <div class="absolute bottom-[22%] h-3 w-24 rounded-full bg-ink/10 blur-md transition duration-500 group-hover:scale-75 group-hover:opacity-50"></div>
+            <a href="#shop" class="absolute inset-x-4 bottom-4 translate-y-20 rounded-full bg-white py-3 text-center text-sm font-medium text-ink opacity-0 transition duration-300 hover:bg-sun focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white group-hover:translate-y-0 group-hover:opacity-100">Add to bag</a>
+          </div>
+          <div class="mt-4 flex items-baseline justify-between px-1">
+            <h3 class="font-display text-lg font-bold">Morning mug</h3>
+            <p class="font-medium">$28</p>
+          </div>
+          <p class="px-1 text-sm text-ink/60">350 ml · Cobalt</p>
+        </div>
+
+        <!-- Product 2: Bowl -->
+        <div class="group">
+          <div class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl bg-glass transition duration-500 group-hover:bg-ink group-hover:shadow-2xl group-hover:shadow-ink/30">
+            <div class="transition duration-500 group-hover:-translate-y-3 group-hover:scale-105" aria-hidden="true">
+              <div class="h-20 w-40 rounded-b-full bg-gradient-to-b from-white to-ice shadow-[inset_0_-10px_18px_rgba(43,63,214,0.25)]">
+                <div class="mx-auto h-3 w-full rounded-full bg-ink/10"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-[26%] h-3 w-32 rounded-full bg-ink/15 blur-md transition duration-500 group-hover:scale-75"></div>
+            <a href="#shop" class="absolute inset-x-4 bottom-4 translate-y-20 rounded-full bg-white py-3 text-center text-sm font-medium text-ink opacity-0 transition duration-300 hover:bg-sun focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white group-hover:translate-y-0 group-hover:opacity-100">Add to bag</a>
+          </div>
+          <div class="mt-4 flex items-baseline justify-between px-1">
+            <h3 class="font-display text-lg font-bold">Noodle bowl</h3>
+            <p class="font-medium">$34</p>
+          </div>
+          <p class="px-1 text-sm text-ink/60">700 ml · Salt white</p>
+        </div>
+
+        <!-- Product 3: Vase -->
+        <div class="group">
+          <div class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl bg-sun transition duration-500 group-hover:bg-cobalt group-hover:shadow-2xl group-hover:shadow-cobalt/25">
+            <div class="flex flex-col items-center transition duration-500 group-hover:-translate-y-3 group-hover:scale-105 group-hover:rotate-3" aria-hidden="true">
+              <div class="h-14 w-7 rounded-t-md bg-gradient-to-r from-cobalt to-[#1b2a9c] group-hover:from-white group-hover:to-ice"></div>
+              <div class="-mt-1 h-32 w-24 rounded-[45%_45%_30%_30%/35%_35%_65%_65%] bg-gradient-to-br from-cobalt to-[#1b2a9c] shadow-[inset_-10px_-8px_16px_rgba(0,0,0,0.25)] group-hover:from-white group-hover:to-glass"></div>
+            </div>
+            <div class="absolute bottom-[22%] h-3 w-24 rounded-full bg-ink/15 blur-md transition duration-500 group-hover:scale-75"></div>
+            <a href="#shop" class="absolute inset-x-4 bottom-4 translate-y-20 rounded-full bg-white py-3 text-center text-sm font-medium text-ink opacity-0 transition duration-300 hover:bg-sun focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white group-hover:translate-y-0 group-hover:opacity-100">Add to bag</a>
+          </div>
+          <div class="mt-4 flex items-baseline justify-between px-1">
+            <h3 class="font-display text-lg font-bold">Bud vase</h3>
+            <p class="font-medium">$42</p>
+          </div>
+          <p class="px-1 text-sm text-ink/60">18 cm · Deep cobalt</p>
+        </div>
+
+        <!-- Product 4: Plate -->
+        <div class="group">
+          <div class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl bg-white transition duration-500 group-hover:bg-glass group-hover:shadow-2xl group-hover:shadow-ink/15">
+            <div class="transition duration-500 group-hover:-translate-y-3 group-hover:scale-105 group-hover:-rotate-6" aria-hidden="true">
+              <div class="flex h-14 w-48 items-center justify-center rounded-[50%] bg-gradient-to-b from-ice to-[#cdd4ee] shadow-[inset_0_-6px_12px_rgba(43,63,214,0.2)]">
+                <div class="h-8 w-36 rounded-[50%] bg-white/80 shadow-[inset_0_3px_6px_rgba(21,23,43,0.12)]"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-[34%] h-3 w-40 rounded-full bg-ink/10 blur-md transition duration-500 group-hover:scale-75"></div>
+            <a href="#shop" class="absolute inset-x-4 bottom-4 translate-y-20 rounded-full bg-ink py-3 text-center text-sm font-medium text-white opacity-0 transition duration-300 hover:bg-cobalt focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cobalt group-hover:translate-y-0 group-hover:opacity-100">Add to bag</a>
+          </div>
+          <div class="mt-4 flex items-baseline justify-between px-1">
+            <h3 class="font-display text-lg font-bold">Dinner plate</h3>
+            <p class="font-medium">$30</p>
+          </div>
+          <p class="px-1 text-sm text-ink/60">27 cm · Mist</p>
+        </div>
+
+        <!-- Product 5: Tumbler -->
+        <div class="group">
+          <div class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl bg-ink transition duration-500 group-hover:bg-sun group-hover:shadow-2xl group-hover:shadow-sun/30">
+            <span class="absolute left-4 top-4 rounded-full bg-white/15 px-3 py-1 text-xs font-bold text-white group-hover:bg-ink/10 group-hover:text-ink">Only 12 left</span>
+            <div class="transition duration-500 group-hover:-translate-y-3 group-hover:scale-105 group-hover:rotate-3" aria-hidden="true">
+              <div class="h-32 w-20 rounded-b-3xl rounded-t-md bg-gradient-to-br from-glass to-[#7fbba3] shadow-[inset_-8px_-6px_14px_rgba(0,0,0,0.2)] group-hover:from-cobalt group-hover:to-[#1b2a9c]"></div>
+            </div>
+            <div class="absolute bottom-[22%] h-3 w-20 rounded-full bg-black/30 blur-md transition duration-500 group-hover:scale-75"></div>
+            <a href="#shop" class="absolute inset-x-4 bottom-4 translate-y-20 rounded-full bg-white py-3 text-center text-sm font-medium text-ink opacity-0 transition duration-300 hover:bg-cobalt hover:text-white focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white group-hover:translate-y-0 group-hover:opacity-100">Add to bag</a>
+          </div>
+          <div class="mt-4 flex items-baseline justify-between px-1">
+            <h3 class="font-display text-lg font-bold">Tall tumbler</h3>
+            <p class="font-medium">$24</p>
+          </div>
+          <p class="px-1 text-sm text-ink/60">400 ml · Sea glass</p>
+        </div>
+
+        <!-- Product 6: Dripper -->
+        <div class="group">
+          <div class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl bg-cobalt transition duration-500 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-cobalt/20">
+            <div class="flex flex-col items-center transition duration-500 group-hover:-translate-y-3 group-hover:scale-105 group-hover:-rotate-3" aria-hidden="true">
+              <div class="h-0 w-0 border-x-[3.25rem] border-t-[5.5rem] border-x-transparent border-t-white group-hover:border-t-cobalt"></div>
+              <div class="-mt-1 h-3 w-8 rounded-b-md bg-white group-hover:bg-cobalt"></div>
+            </div>
+            <div class="absolute bottom-[26%] h-3 w-24 rounded-full bg-black/25 blur-md transition duration-500 group-hover:scale-75"></div>
+            <a href="#shop" class="absolute inset-x-4 bottom-4 translate-y-20 rounded-full bg-ink py-3 text-center text-sm font-medium text-white opacity-0 transition duration-300 hover:bg-cobalt focus-visible:translate-y-0 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cobalt group-hover:translate-y-0 group-hover:opacity-100">Add to bag</a>
+          </div>
+          <div class="mt-4 flex items-baseline justify-between px-1">
+            <h3 class="font-display text-lg font-bold">Pour-over dripper</h3>
+            <p class="font-medium">$38</p>
+          </div>
+          <p class="px-1 text-sm text-ink/60">Fits 1–2 cups · White</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story" class="mx-auto max-w-6xl scroll-mt-20 px-5 pb-20 md:pb-28">
+      <div class="grid gap-5 md:grid-cols-5">
+        <div class="rounded-[2rem] bg-ink p-8 text-white md:col-span-3 md:p-12">
+          <h2 class="font-display text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">
+            Thrown on Monday. Glazed on Wednesday. Fired for two days.
+          </h2>
+          <p class="mt-6 max-w-lg leading-relaxed text-white/70">
+            Our studio is three potters and one kiln. We make around 200 pieces a week, and we'd rather sell out than run a bigger factory.
+          </p>
+        </div>
+
+        <div class="grid gap-5 md:col-span-2">
+          <div class="rounded-[2rem] bg-glass p-8 transition duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/10">
+            <p class="font-display text-5xl font-extrabold">1,240°C</p>
+            <p class="mt-2 text-ink/70">Our kiln temperature. It makes the stoneware dense, so it won't soak up coffee.</p>
+          </div>
+          <div class="rounded-[2rem] bg-sun p-8 transition duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/10">
+            <p class="font-display text-5xl font-extrabold">30 days</p>
+            <p class="mt-2 text-ink/70">Return anything that doesn't feel right in your hand. We'll refund it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARE / CTA -->
+    <section id="care" class="mx-auto max-w-6xl scroll-mt-20 px-5 pb-20">
+      <div class="flex flex-col items-start justify-between gap-6 rounded-[2rem] bg-white p-8 md:flex-row md:items-center md:p-12">
+        <div>
+          <h2 class="font-display text-3xl font-extrabold tracking-tight md:text-4xl">Care is easy.</h2>
+          <p class="mt-3 max-w-md text-ink/70">Wash by hand or in the dishwasher. Avoid sudden heat changes, like pouring boiling water into a cold-from-the-fridge mug.</p>
+        </div>
+        <a href="#shop" class="group inline-flex shrink-0 items-center gap-2 rounded-full bg-cobalt px-7 py-3.5 font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:bg-ink hover:shadow-xl hover:shadow-cobalt/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cobalt">
+          Start your set
+          <span class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-ink/10">
+    <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-5 py-8 text-sm text-ink/60 sm:flex-row sm:items-center">
+      <p class="font-display font-bold text-ink">glazeworks</p>
+      <p>Free shipping over $60. Packed in recycled paper.</p>
+      <p>&copy; 2026 Glazeworks</p>
+    </div>
+  </footer>
+
+</body>
+</html>
